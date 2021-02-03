@@ -4,9 +4,12 @@ import { FaQuoteRight } from "react-icons/fa";
 import data from "./data";
 
 function App() {
-  const [people, setPeople] = useState(data);
+  const [people, setPeople] = useState([]);
   const [index, setIndex] = useState(0);
 
+  useEffect(()=>{
+    setPeople(data)
+  },[])
   // netflify treats warnings as errors
 
 
