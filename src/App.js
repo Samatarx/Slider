@@ -7,11 +7,11 @@ function App() {
   const [people, setPeople] = useState([]);
   const [index, setIndex] = useState(0);
 
-  useEffect(()=>{
-    setPeople(data)
-  },[])
-  // netflify treats warnings as errors
-
+  // netflify treats warnings as errors so initiallised the state inside a useEffect, to prevent the setPeople variable not being called
+  useEffect(() => {
+    setPeople(data);
+  }, []);
+  
 
   useEffect(() => {
     const lastIndex = people.length - 1;
