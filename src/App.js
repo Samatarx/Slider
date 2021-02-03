@@ -8,7 +8,7 @@ function App() {
   const [index, setIndex] = useState(0);
 
   // netflify treats warnings as errors
-  setPeople(data)
+
 
   useEffect(() => {
     const lastIndex = people.length - 1;
